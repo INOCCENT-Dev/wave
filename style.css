@@ -1,0 +1,36 @@
+.profile{
+  position: fixed;
+  
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+
+  z-index: 2;
+  margin: 0;
+
+  left:10px;
+  top:10px;
+}
+
+.profile_img{
+  height: 50px;
+  display: inline-block;  
+}
+
+.title{
+  color: rgb(81, 81, 81);
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-block;  
+  margin: 0px;
+  padding-bottom: 9px;
+  margin-left: 3px;
+}
+
+body{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
