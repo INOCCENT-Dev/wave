@@ -15,11 +15,8 @@
       let x = (canvas.width / (SPOT_NUMBER-1)) * i;
       
       spot1[i] = new Spot(x,200,i);
-      if(i + 30 > SPOT_NUMBER) spot2[i] = new Spot(x,200,i-570);
-      else spot2[i] = new Spot(x,200,i+30);
-      if(i + 60 > SPOT_NUMBER) spot3[i] = new Spot(x,200,i-540);
-      else spot3[i] = new Spot(x,200,i+60);
-      
+      spot2[i] = new Spot(x,200,i+20);
+      spot3[i] = new Spot(x,200,i+40);
     }
 
     window.onclick = function() {
@@ -56,7 +53,7 @@
     let R = Math.floor(lmin+Math.random()*(lmax - lmin));
     let G = Math.floor(lmin+Math.random()*(lmax - lmin));
     let B = Math.floor(lmin+Math.random()*(lmax - lmin));
-    return 'rgb('+R+','+B+','+G+',0.5)'; 
+    return 'rgba('+R+','+B+','+G+',0.5)'; 
   }
 
   function Spot(x,y,tmpX){
